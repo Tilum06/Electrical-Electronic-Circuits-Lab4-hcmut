@@ -2,12 +2,50 @@
 
 Voltage regulator like IC7805 belongs to the 78xx series ICs. In the 78xx series, xx represents the fixed output voltage value and 7805 is a fixed linear voltage regulator. Batteries provide a voltage of 1.2V, 3.7V, 9V, and 12V. This voltage is good for the circuits which voltage requirements are in that range. The regulated power supply in this regulator is +5V DC.
 
-%add figure here
+The 7805 voltage regulator is a three-terminal voltage regulator IC. In various applications, a 7805 voltage regulator with a fixed output voltage is used. The availability of this is through various packages like SOT-223, TO-263, TO-220, and TO-3. Among this, TO-220 is the most used one. The pin diagram of 7805 voltage regulator IC and its description are explained bellow:
 
-\subsection{Schematicdesign}
+\begin{itemize}
+    \item \textbf{Pin 1 - Input:} This is an input pin and the voltage range should be between 7V to 35V. an unregulated voltage is applied to this input pin for regulation. The pin will receive its maximum efficiency at 7.2V input.
+    \item \textbf{Pin 2 - Ground:} Pin2 is the ground pin, it means the ground is connected to this pin. Input and output are common to it.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{graphics/chap2_question_a.jpg}
+    \caption{LM7805 Pin Out}
+    \label{fig:chap2_question_a}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Pin 3 - Output:} Pin3 is the output pin, where the regulated output is taken by this pin. It is about 5V(4.8V to 5.2V)
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphics/chap2_question_b.png}
+    \caption{Voltage regulator using 78xx schematic in Altium Designer}
+    \label{fig:chap2_question_b}
+\end{figure}
+
+The basic circuit of 7805 is very simple. It just needs two capacitors if the input is unregu-
+lated DC voltage, even the two capacitors used are also not mandatory. This 7805 circuit is
+capable of upholding fixed output voltage even if some changes take place in input volt-
+age.
+
+The manual for this circuit is posted at the link bellow:
+
+\begin{center}
+\underline{\url{https://www.youtube.com/watch?v=mSEBrma5MNM}}
+\end{center}
+
+
+\subsection{Schematic design}
 
  Students are proposed to capture the schematic design in Altium Designer and place the
  image in this part.
+
+Some hot keys are normally used in the schematic is the space bar, X( horizontal mirror),
+Y (vertial mirror) and Ctrl + W (place a wire).
 
  \textbf{Your image goes here}
 
@@ -18,9 +56,15 @@ Voltage regulator like IC7805 belongs to the 78xx series ICs. In the 78xx series
     \label{fig:chap2_sch}
 \end{figure}
 
-\subsection{PCBlayout}
+\subsection{PCB layout}
 
 Similarly to the schematic, some snap shorts of for the TOP, BOTTOM layers are required in this report. Moreover, several 3D images of your schematic are also required.
+
+A manual video can be found at:
+
+\begin{center}
+    \underline{\url{https://www.youtube.com/watch?v=PW_QQpoODDk}}
+\end{center}
 
 \textbf{Your images go here}
 
